@@ -66,9 +66,14 @@ function LoggedUser() {
 			</Menu>
 			<Stack height="100%" direction="row" flex={1} justifyContent="flex-end" alignItems="center" spacing={0}>
 				<NotificationsButton />
-				<IconButton size="small">
+				<IconButton size="medium">
 					<Badge color="tertiary" overlap="rectangular" variant="dot">
-						<CommentOutlinedIcon color="primary" fontSize="small" />
+						<CommentOutlinedIcon
+							fontSize="medium"
+							sx={{
+								color: 'white',
+							}}
+						/>
 					</Badge>
 				</IconButton>
 				<ButtonBase
@@ -87,7 +92,6 @@ function LoggedUser() {
 						},
 						'&:hover .MuiSvgIcon-root': {
 							opacity: '1',
-							// transform: 'translateX(10px)',
 						},
 					}}
 				>
@@ -138,7 +142,7 @@ function UserMenu({ handleClose }) {
 		>
 			<Stack px={3}>
 				<Typography variant="subtitle1" textAlign="center">
-					Elizabeth Lumaad Olsen
+					bansari
 				</Typography>
 				<Typography variant="subtitle2" textAlign="center">
 					Executive Director

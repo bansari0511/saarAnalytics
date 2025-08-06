@@ -129,7 +129,12 @@ function NotificationsButton() {
 			<Tooltip title="Notificaciones">
 				<IconButton onClick={handleClick} size="small">
 					<Badge color="secondary" overlap="rectangular" variant="dot">
-						<NotificationsOutlinedIcon color="primary" fontSize="small" />
+						<NotificationsOutlinedIcon
+							fontSize="medium"
+							sx={{
+								color: 'white',
+							}}
+						/>
 					</Badge>
 				</IconButton>
 			</Tooltip>
@@ -153,7 +158,6 @@ function Notification({ notification }) {
 			<Stack width="100%" direction="row" spacing={2} alignItems="center" justifyContent="flex-start">
 				<Avatar
 					alt="Perfil"
-					/* src={`https://picsum.photos/200/300?random=${Math.random()}`} */
 					src={notification?.avatar}
 					sx={{
 						width: 50,
