@@ -30,7 +30,7 @@ function Verify() {
 				color="success"
 			/>
 			<Typography variant="subtitle1">
-				<b>Elizabeth,</b> tu cuenta de tipo {userType} se ha activado correctamente.
+				<b>Bansari,</b> tu cuenta de tipo {userType} se ha activado correctamente.
 			</Typography>
 			<Typography variant="body1">
 				Confirmaste tu cuenta correctamente con el correo <strong>elizabeth@slimtemplate.com</strong>, ya puedes

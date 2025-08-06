@@ -108,8 +108,9 @@ function LoggedUser() {
 								xs: 'none',
 								sm: 'inline-block',
 							}}
+							style={{ color: 'white' }}
 						>
-							Elizabeth
+							Bansari
 						</Typography>
 						<ExpandMoreIcon
 							fontSize="small"

@@ -23,7 +23,7 @@ function WelcomeCard() {
 	return (
 		<Stack spacing={2}>
 			<Typography variant="h5" fontSize={24}>
-				Bienvenida de nuevo, Elizabeth!
+				Welcome, Bansari!
 			</Typography>
 			<Typography variant="body2" color="text.tertiary" fontSize={15}>
 				Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi

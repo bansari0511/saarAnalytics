@@ -25,7 +25,7 @@ function ProfileSection() {
 				<form onSubmit={() => {}}>
 					<Grid container spacing={3}>
 						<Grid item xs={12} sm={6} md={6}>
-							<TextField label="First Name" variant="outlined" defaultValue="Elizabeth" fullWidth />
+							<TextField label="First Name" variant="outlined" defaultValue="Bansari" fullWidth />
 						</Grid>
 						<Grid item xs={12} sm={6} md={6}>
 							<TextField label="Last Name" variant="outlined" defaultValue="Lumaad Olsen" fullWidth />
