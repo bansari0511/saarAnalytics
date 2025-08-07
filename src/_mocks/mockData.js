@@ -71,6 +71,32 @@ const mockArticles = {
 			url: 'https://example.com/india-news-2',
 		},
 	],
+	china: [
+		{
+			id: 1,
+			title: 'Berlin Hosts Global Climate Summit',
+			summary: 'Leaders from 50+ nations gather to address carbon neutrality goals.',
+			url: 'https://example.com/germany-news-1',
+		},
+		{
+			id: 2,
+			title: 'RBI Keeps Repo Rate Unchanged',
+			summary: 'The central bank holds rates steady amid controlled inflation data.',
+			url: 'https://example.com/india-news-2',
+		},
+		{
+			id: 3,
+			title: 'Berlin Hosts Global Climate Summit',
+			summary: 'Leaders from 50+ nations gather to address carbon neutrality goals.',
+			url: 'https://example.com/germany-news-1',
+		},
+		{
+			id: 4,
+			title: 'RBI Keeps Repo Rate Unchanged',
+			summary: 'The central bank holds rates steady amid controlled inflation data.',
+			url: 'https://example.com/india-news-2',
+		},
+	],
 };
 
 export default mockArticles;

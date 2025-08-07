@@ -53,15 +53,50 @@ function NewsTabs() {
 				height: '100%',
 			}}
 		>
-			<Box sx={{ width: '100%', marginBottom: '6px' }}>
-				<Paper elevation={2} sx={{ mb: 2, borderRadius: 2 }}>
+			<Box sx={{ width: '100%' }}>
+				<Paper
+					elevation={2}
+					sx={{
+						mb: 2,
+						borderRadius: 3,
+						background: 'linear-gradient(90deg, #f5f7fa 0%, #e4ecf2 100%)',
+						p: 1,
+					}}
+				>
 					<Tabs
 						value={selectedTab}
 						onChange={handleTabChange}
 						variant={isMobile ? 'scrollable' : 'fullWidth'}
 						scrollButtons={isMobile ? 'auto' : false}
-						textColor="primary"
-						indicatorColor="primary"
+						textColor="inherit"
+						TabIndicatorProps={{
+							style: {
+								height: 0, // Hide the default indicator
+							},
+						}}
+						sx={{
+							'& .MuiTab-root': {
+								textTransform: 'none',
+								fontWeight: 600,
+								fontSize: '1rem',
+								borderRadius: 2,
+								mx: 0.5,
+								my: 1,
+								px: 2,
+								transition: 'all 0.3s ease',
+								color: 'text.secondary',
+								'&:hover': {
+									bgcolor: 'grey.100',
+									color: 'primary.main',
+									boxShadow: 2,
+								},
+							},
+							'& .Mui-selected': {
+								bgcolor: 'primary.light',
+								color: 'primary.contrastText',
+								boxShadow: 3,
+							},
+						}}
 					>
 						{countries.map((country) => (
 							<Tab key={country.value} label={country.label} />
