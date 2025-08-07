@@ -1,9 +1,10 @@
 import { v4 as uuid } from 'uuid';
 // Icons
-import GridViewOutlinedIcon from '@mui/icons-material/GridViewOutlined';
+import SearchOutlined from '@mui/icons-material/SearchOutlined';
 import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import AutoStoriesOutlinedIcon from '@mui/icons-material/AutoStoriesOutlined';
+import NewspaperOutlined from '@mui/icons-material/NewspaperOutlined';
+import MapOutlined from '@mui/icons-material/MapOutlined';
 
 /**
  * @example
@@ -21,15 +22,15 @@ const NAV_LINKS_CONFIG = [
 	{
 		id: uuid(),
 		type: 'item',
-		title: 'Dashboard',
+		title: 'Home',
 		Icon: BarChartOutlinedIcon,
 		href: '/dashboard3',
 	},
 	{
 		id: uuid(),
 		type: 'group',
-		title: 'Components',
-		Icon: GridViewOutlinedIcon,
+		title: 'Newsroom',
+		Icon: NewspaperOutlined,
 		menuChildren: [
 			{
 				title: 'Forms',
@@ -40,8 +41,8 @@ const NAV_LINKS_CONFIG = [
 	{
 		id: uuid(),
 		type: 'group',
-		title: 'Pages',
-		Icon: AutoStoriesOutlinedIcon,
+		title: 'Map',
+		Icon: MapOutlined,
 		menuChildren: [
 			{
 				id: uuid(),
@@ -55,6 +56,13 @@ const NAV_LINKS_CONFIG = [
 				],
 			},
 		],
+	},
+	{
+		id: uuid(),
+		type: 'item',
+		title: 'Search and Analysis',
+		Icon: SearchOutlined,
+		href: '/profile',
 	},
 	{
 		id: uuid(),

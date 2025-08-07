@@ -36,7 +36,7 @@ function LoadersComponentsPage() {
 					}}
 				>
 					<Link underline="hover" href="#!">
-						Inicio
+						saar
 					</Link>
 					<Typography color="text.tertiary">Components</Typography>
 					<Typography color="text.tertiary">Loaders</Typography>

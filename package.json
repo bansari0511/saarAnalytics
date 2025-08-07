@@ -8,7 +8,7 @@
 	
 	"scripts": {
 		"start": "vite",
-		"dev": "vite",
+		"dev": "vite --open",
 		"dev:host": "vite --host",
 		"build": "vite build",
 		"preview": "vite preview",

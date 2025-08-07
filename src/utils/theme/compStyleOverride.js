@@ -78,7 +78,7 @@ const getComponentStyleOverride = (mode) => ({
 				},
 				style: {
 					'&:hover': {
-						boxShadow: '0px 10px 20px -10px #0005',
+						boxShadow: '10px 10px 20px -10px #0005',
 					},
 				},
 			},
@@ -88,7 +88,7 @@ const getComponentStyleOverride = (mode) => ({
 				},
 				style: {
 					'&:hover': {
-						boxShadow: `0px 10px 20px -15px ${getPalette(mode)?.primary.main}`,
+						boxShadow: `10px 10px 20px -15px ${getPalette(mode)?.primary.main}`,
 					},
 				},
 			},

@@ -11,7 +11,7 @@ import calcLayoutHeight from '@/utils/helpers/layoutHeight';
 function WorkInProgress() {
 	return (
 		<Box
-			minHeight={`calc(100vh - ${calcLayoutHeight('header', false) + calcLayoutHeight('footer', false)}px)`}
+			minHeight={`calc(80vh - ${calcLayoutHeight('header', false) + calcLayoutHeight('footer', false)}px)`}
 			p="5%"
 			display="grid"
 			sx={{
