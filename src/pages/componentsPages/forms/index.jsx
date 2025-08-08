@@ -40,7 +40,7 @@ function FormsComponentPage() {
 					}}
 				>
 					<Link underline="hover" href="#!">
-						Inicio
+						NewLink
 					</Link>
 					<Typography color="text.tertiary">Components</Typography>
 					<Typography color="text.tertiary">Forms</Typography>

@@ -64,7 +64,7 @@ function StatSection({ statData }) {
 	});
 
 	return (
-		<Card>
+		<Card sx={{ padding: '10px' }}>
 			<Stack direction="row" spacing={1} alignItems="center">
 				<Icon
 					sx={{

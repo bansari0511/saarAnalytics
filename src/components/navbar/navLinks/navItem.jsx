@@ -7,7 +7,7 @@ import ButtonBase from '@mui/material/ButtonBase';
 // Icons
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export function NavItem({ Icon, title, showExpand = false, selected = false }) {
+export function NavItem({ Icon, title, showExpand = false, selected = true }) {
 	return (
 		<Stack
 			width="100%"
@@ -63,11 +63,11 @@ export function NavItemButton({ children, selected, sx, ...rest }) {
 				flexGrow: 1,
 				...(selected && {
 					backgroundImage: (theme) =>
-						`linear-gradient(90deg, ${theme.palette.primary[300]} 0%,${theme.palette.primary.dark} 100% )`,
+						`linear-gradient(45deg, ${theme.palette.primary[100]} 50%,${theme.palette.primary.dark} 90% )`,
 					// bgcolor: selected ? '#000' : 'transparent',
 				}),
 				'&:hover': {
-					bgcolor: (theme) => alpha(theme.palette.primary.light, 0.1),
+					bgcolor: (theme) => alpha(theme.palette.primary.light, 0.2),
 				},
 				...sx,
 			}}

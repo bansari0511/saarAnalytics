@@ -8,7 +8,13 @@ import NavLinks from './navLinks';
 function Navbar({ navItems, position = 'sticky' }) {
 	return (
 		<AppBar position={position} elevation={26} sx={{ borderLeft: 0, borderRight: 0 }}>
-			<Box bgcolor="background.paper" py={2}>
+			<Box
+				bgcolor="background.paper"
+				sx={{
+					paddingTop: '5px',
+					paddingBottom: '5px',
+				}}
+			>
 				<Container maxWidth="lg">
 					<NavLinks navItems={navItems} />
 				</Container>

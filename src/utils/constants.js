@@ -1,5 +1,5 @@
 export default {
-	author: 'Antonio Ayola',
+	author: 'Bansari',
 	avatar: 'https://avatars.githubusercontent.com/u/35477201?v=4',
 	profilesUrls: {
 		linkedin: 'https://www.linkedin.com/in/antonio-ayola/',

@@ -7,7 +7,7 @@ import SalesOverviewCard from './salesCard';
 import StatsSection from './statsSection';
 import EarningsSection from './earningsSection';
 import ProductsSection from './productsSection';
-import NewsTabs from '@/pages/newsPages/NewsTabs';
+import NewsHomePage from '@/pages/newsPages/NewsTabs';
 
 function Dashboard3() {
 	return (
@@ -20,12 +20,12 @@ function Dashboard3() {
 					}}
 				/>
 			</PageHeader>
-			<Grid container spacing={2}>
+			<Grid container spacing={1}>
 				<Grid item xs={12} sm={12} md={12}>
 					<StatsSection />
 				</Grid>
 				<Grid item xs={12} sm={6} md={6}>
-					<NewsTabs />
+					<NewsHomePage />
 				</Grid>
 				<Grid item xs={12} sm={6} md={6}>
 					<EarningsSection />

@@ -38,7 +38,12 @@ function MainLayout({ container = 'lg', pb = true }) {
 
 	return (
 		<Box display="flex" minHeight="100vh" flexDirection="column">
-			<Header />
+			<Header
+				sx={{
+					paddingTop: '10px',
+					paddingBottom: '10px',
+				}}
+			/>
 			<Container
 				maxWidth={container}
 				component="main"

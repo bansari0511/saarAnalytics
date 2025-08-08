@@ -13,10 +13,8 @@ import {
 	Fade,
 } from '@mui/material';
 import Card from '@mui/material/Card';
-import Button from '@mui/material/Button';
-import Avatar from '@mui/material/Avatar';
-import CardHeader from '@/components/cardHeader';
 import mockArticles from '@/_mocks/mockData';
+import ArticleIcon from '@mui/icons-material/NewspaperRounded';
 
 function NewsTabs() {
 	const [selectedTab, setSelectedTab] = useState(0);
@@ -26,10 +24,10 @@ function NewsTabs() {
 	const itemsPerPage = 5;
 
 	const countries = [
-		{ label: 'USA', value: 'usa' },
-		{ label: 'India', value: 'india' },
-		{ label: 'Germany', value: 'germany' },
-		{ label: 'China', value: 'china' },
+		{ label: '🇺🇸 USA', value: 'usa' },
+		{ label: '🇮🇳 India', value: 'india' },
+		{ label: '🇩🇪 Germany', value: 'germany' },
+		{ label: '🇨🇳 China', value: 'china' },
 	];
 
 	const handleTabChange = (_, newIndex) => {
@@ -51,16 +49,31 @@ function NewsTabs() {
 		<Card
 			sx={{
 				height: '100%',
+				padding: '15px',
 			}}
 		>
+			<Box display="flex" alignItems="center">
+				<ArticleIcon color="success" sx={{ mr: 1, fontSize: 28 }} />
+				<Typography
+					sx={{
+						fontSize: 22,
+						fontWeight: 'bold',
+						color: '#487D07',
+						padding: '10px',
+					}}
+				>
+					Latest News
+				</Typography>
+			</Box>
 			<Box sx={{ width: '100%' }}>
 				<Paper
 					elevation={2}
 					sx={{
 						mb: 2,
 						borderRadius: 3,
-						background: 'linear-gradient(90deg, #f5f7fa 0%, #e4ecf2 100%)',
-						p: 1,
+						background: 'linear-gradient(to top, #f5f7fa 0%, #c8e3f7 100%)',
+						padding: '4px',
+						marginBottom: '7px',
 					}}
 				>
 					<Tabs
@@ -78,7 +91,8 @@ function NewsTabs() {
 							'& .MuiTab-root': {
 								textTransform: 'none',
 								fontWeight: 600,
-								fontSize: '1rem',
+								padding: '12px',
+								fontSize: '12px',
 								borderRadius: 2,
 								mx: 0.5,
 								my: 1,
@@ -99,7 +113,7 @@ function NewsTabs() {
 						}}
 					>
 						{countries.map((country) => (
-							<Tab key={country.value} label={country.label} />
+							<Tab key={country.value} label={country.label} sx={{ fontSize: '10px' }} />
 						))}
 					</Tabs>
 				</Paper>
@@ -108,11 +122,9 @@ function NewsTabs() {
 					<Card
 						sx={{
 							height: '100%',
+							borderRadius: '5px',
 						}}
 					>
-						<CardHeader title="Lastest News" fontSize={30} subtitle="Last activity was 1 hour ago">
-							<Button size="small">See All</Button>
-						</CardHeader>
 						<Box>
 							{currentArticles.length > 0 ? (
 								<Grid container spacing={2}>
